@@ -5,44 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Indian Air Force - History & Achievements</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      padding-top: 60px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.8);
-    }
-    .modal-content {
-      margin: auto;
-      display: block;
-      max-width: 90%;
-    }
-    .caption {
-      text-align: center;
-      color: #f1f1f1;
-      padding: 10px;
-      font-size: 18px;
-    }
-    .close {
-      position: absolute;
-      top: 30px;
-      right: 45px;
-      color: #fff;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    .close:hover {
-      color: #bbb;
-    }
-  </style>
 </head>
 <body>
 
@@ -94,7 +56,6 @@
 
     <section id="fleet">
       <h2>Aircraft Fleet</h2>
-      <p>The IAF operates a diverse fleet of fighter jets, transport aircraft, helicopters, and trainer aircraft. Some of the notable aircraft include:</p>
       <ul>
         <li>Sukhoi Su-30MKI - Air superiority fighter</li>
         <li>Rafale - Multi-role fighter</li>
@@ -109,7 +70,6 @@
 
     <section id="heroes">
       <h2>Heroes & Gallantry Awards</h2>
-      <p>The IAF has produced numerous brave air warriors who have demonstrated extraordinary courage and skill. Many officers and airmen have been awarded the Param Vir Chakra, Maha Vir Chakra, and Vir Chakra.</p>
       <ul>
         <li>Wing Commander Abhinandan Varthaman - Vir Chakra recipient</li>
         <li>Air Marshal Arjan Singh - Distinguished service</li>
@@ -119,7 +79,6 @@
 
     <section id="training">
       <h2>Training & Institutions</h2>
-      <p>The Indian Air Force trains its personnel at premier institutions like:</p>
       <ul>
         <li>Air Force Academy (Dundigal)</li>
         <li>National Defence Academy (NDA)</li>
@@ -131,20 +90,18 @@
 
     <section id="operations">
       <h2>Operations & Exercises</h2>
-      <p>The IAF regularly conducts domestic and international exercises to maintain high operational readiness.</p>
       <ul>
         <li>Operation Safed Sagar (Kargil conflict)</li>
         <li>Operation Rahat (Uttarakhand flood relief)</li>
         <li>Exercise Gaganshakti (large-scale readiness drill)</li>
-        <li>International joint exercises with USAF, RAF, French Air Force, and more</li>
+        <li>Joint exercises with USAF, RAF, French Air Force, and others</li>
       </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Website: <a href="https://indianairforce.nic.in/" target="_blank">indianairforce.nic.in</a></p>
-      <p>Follow on social media for latest updates.</p>
-      <img src="images/crest.png" alt="IAF Emblem" style="max-width: 150px;">
+      <img src="images/crest.svg" alt="IAF Emblem" style="max-width: 150px;">
     </section>
   </main>
 
@@ -168,7 +125,6 @@
       img.addEventListener("click", () => {
         modal.style.display = "block";
         modalImg.src = img.src;
-        modalImg.alt = img.alt;
         captionText.innerText = img.alt;
       });
     });
@@ -183,6 +139,5 @@
       }
     }
   </script>
-
 </body>
 </html>
