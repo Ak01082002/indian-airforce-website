@@ -115,5 +115,23 @@
   <footer>
     <p>&copy; 2025 Indian Air Force Tribute Website</p>
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", checkSections);
+
+    function checkSections() {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add("show");
+        }
+      });
+    }
+
+    // Run on load
+    checkSections();
+  </script>
 </body>
 </html>
